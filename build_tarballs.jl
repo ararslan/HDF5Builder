@@ -14,6 +14,7 @@ script = raw"""
         --disable-dependency-tracking \
         --disable-silent-rules \
         --prefix=${prefix} \
+        --host=${target} \
         --enable-build-mode=production \
         --enable-fortran \
         --enable-cxx \
