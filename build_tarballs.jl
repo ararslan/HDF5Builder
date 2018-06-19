@@ -14,9 +14,10 @@ script = raw"""
         --disable-dependency-tracking \
         --disable-silent-rules \
         --prefix=${prefix} \
+        --host=${target} \
         --enable-build-mode=production \
-        --enable-fortran \
-        --enable-cxx \
+        --disable-fortran \
+        --disable-cxx \
         --enable-shared
 
     make -j${nproc}
